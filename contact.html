@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Book — Hair by IDE</title>
+  <meta name="description" content="Book an appointment or walk in at Hair by IDE, 11a Victoria House, South Lambeth Road, Vauxhall SW8 1QT. Call 020 7587 1980."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-inner">
+      <div class="pl-logo">Hair by IDE</div>
+      <div class="pl-bar"><div class="pl-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="topstrip">
+    <div class="ts-inner">
+      <span>📍 11a Victoria House, South Lambeth Rd, Vauxhall SW8 1QT</span>
+      <span class="ts-sep">·</span>
+      <a href="tel:02075871980">020 7587 1980</a>
+      <span class="ts-sep">·</span>
+      <span>Mon–Fri 10am–7pm &nbsp;|&nbsp; Sat 9am–5pm</span>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <span class="nl-main">Hair by IDE</span>
+        <span class="nl-sub">Hair &amp; Beauty · Vauxhall</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nm-link">Home</a></li>
+        <li><a href="services.html" class="nm-link">Services</a></li>
+        <li><a href="team.html" class="nm-link">Our Team</a></li>
+        <li><a href="about.html" class="nm-link">About</a></li>
+        <li><a href="contact.html" class="nm-link active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-btn">Book Now</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1 class="ph-title reveal-up">Book or Walk In</h1>
+      <p class="ph-sub reveal-up d1">Call us, send a message, or simply walk through the door. We're here Monday to Saturday and always happy to see you.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="cg-form reveal-up">
+          <h2 class="sec-title">Send us<br/>a message.</h2>
+          <p class="cg-intro">Fill in below and we'll be in touch to confirm. Or just walk in — no appointment needed.</p>
+
+          <form class="the-form" id="contactForm" novalidate>
+            <div class="form-row-2">
+              <div class="fgroup">
+                <label for="f-name">Your Name *</label>
+                <input type="text" id="f-name" placeholder="Full name" required/>
+                <span class="ferr" id="nameErr"></span>
+              </div>
+              <div class="fgroup">
+                <label for="f-phone">Phone Number</label>
+                <input type="tel" id="f-phone" placeholder="07700 000000"/>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label for="f-email">Email Address *</label>
+              <input type="email" id="f-email" placeholder="you@email.com" required/>
+              <span class="ferr" id="emailErr"></span>
+            </div>
+            <div class="fgroup">
+              <label for="f-stylist">Preferred Stylist</label>
+              <select id="f-stylist">
+                <option value="">No preference</option>
+                <option>IDE (Owner)</option>
+                <option>Idalina (Senior Stylist)</option>
+                <option>Natalia (Barber)</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="f-service">Service Required</label>
+              <select id="f-service">
+                <option value="">Select a service...</option>
+                <option>Women's Haircut &amp; Blow Dry</option>
+                <option>Women's Dry Cut</option>
+                <option>Full Head Colouring</option>
+                <option>Highlights</option>
+                <option>Children's Haircut</option>
+                <option>Men's Scissors Cut</option>
+                <option>Men's Skin Fade</option>
+                <option>Men's Dry Haircut</option>
+                <option>Beard Trim &amp; Shape Up</option>
+                <option>Men's Hair Colouring</option>
+                <option>Face Treatment</option>
+                <option>Hair Removal</option>
+                <option>Eyebrow Shaping</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="f-date">Preferred Day &amp; Time</label>
+              <input type="text" id="f-date" placeholder="e.g. Thursday afternoon, any Saturday"/>
+            </div>
+            <div class="fgroup">
+              <label for="f-msg">Anything else to know? *</label>
+              <textarea id="f-msg" rows="4" placeholder="Hair type, what you're going for, questions — anything that helps us prepare..." required></textarea>
+              <span class="ferr" id="msgErr"></span>
+            </div>
+            <button type="submit" class="btn-fill btn-submit" id="submitBtn">
+              <span id="btnTxt">Send Message</span>
+              <span id="btnLoad" style="display:none">Sending...</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none">
+              <div class="fs-check">✓</div>
+              <h3>Message received!</h3>
+              <p>We'll be in touch very soon to confirm your appointment. Or feel free to call us directly on 020 7587 1980 — we'd love to hear from you.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="cg-info reveal-right">
+          <div class="ci-call">
+            <div class="ci-label">Prefer to call?</div>
+            <a href="tel:02075871980" class="ci-phone">020 7587 1980</a>
+            <p>Give us a ring during opening hours and we'll sort you out — or just walk in.</p>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Address</div>
+            <p class="ci-main">11a Victoria House<br/>South Lambeth Road<br/>Vauxhall, London<br/><strong>SW8 1QT</strong></p>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Opening Hours</div>
+            <div class="ci-hours">
+              <div class="cih-row"><span>Monday</span><span>10:00am – 7:00pm</span></div>
+              <div class="cih-row"><span>Tuesday</span><span>10:00am – 7:00pm</span></div>
+              <div class="cih-row"><span>Wednesday</span><span>10:00am – 7:00pm</span></div>
+              <div class="cih-row"><span>Thursday</span><span>10:00am – 7:00pm</span></div>
+              <div class="cih-row"><span>Friday</span><span>10:00am – 7:00pm</span></div>
+              <div class="cih-row"><span>Saturday</span><span>9:00am – 5:00pm</span></div>
+              <div class="cih-row closed"><span>Sunday</span><span>Closed</span></div>
+            </div>
+            <div class="open-indicator" id="openIndicator"></div>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Getting Here</div>
+            <p class="ci-main">🚇 Vauxhall Station — Victoria &amp; Northern lines<br/>🚌 Buses: 2, 36, 88, 185, 436<br/>♿ Wheelchair accessible entrance</p>
+          </div>
+
+          <div class="ci-block">
+            <div class="ci-label">Language</div>
+            <p class="ci-main">We speak <strong>English</strong> and <strong>Português</strong> — communicate with us in whichever you prefer.</p>
+          </div>
+
+          <div class="ci-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.0!2d-0.1240106!3d51.4799737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605b7f0aea07d%3A0x114465b651a6d74a!2s11a+Victoria+House%2C+South+Lambeth+Rd%2C+London+SW8+1QT!5e0!3m2!1sen!2suk!4v1"
+              width="100%" height="220"
+              style="border:0; border-radius:10px;"
+              allowfullscreen="" loading="lazy"
+              title="Hair by IDE map">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="fg-brand">
+          <div class="fg-logo">Hair by IDE</div>
+          <p>Vauxhall's most loved unisex hair &amp; beauty salon. A community institution for over 25 years.</p>
+          <div class="fg-langs">English · Português</div>
+        </div>
+        <div class="fg-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact &amp; Book</a></li>
+          </ul>
+        </div>
+        <div class="fg-col">
+          <h4>Hours</h4>
+          <div class="fg-hours">
+            <div class="fgh-row"><span>Monday – Friday</span><span>10am – 7pm</span></div>
+            <div class="fgh-row"><span>Saturday</span><span>9am – 5pm</span></div>
+            <div class="fgh-row closed"><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+        <div class="fg-col">
+          <h4>Contact</h4>
+          <a href="tel:02075871980" class="fg-phone">020 7587 1980</a>
+          <p>11a Victoria House, South Lambeth Road<br/>Vauxhall, London SW8 1QT</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hair by IDE · Vauxhall, London</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
