@@ -105,12 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let status, color, bg;
 
     if (day === 0) {
-   
+  
       status = '● Closed today (Sunday)';
       color  = '#C0392B';
       bg     = '#FDECEA';
     } else if (day === 6) {
-
+  
       if (time >= 9 && time < 17) {
         status = '● Open now — closes at 5:00pm';
         color  = '#1A6B35';
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     document.querySelectorAll('.hero-h1, .hero-pill, .hero-p, .hero-btns, .hero-stats').forEach((el, i) => {
-      if (el.classList.contains('reveal-up')) return;
+      if (el.classList.contains('reveal-up')) return; // already handled
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
       el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
